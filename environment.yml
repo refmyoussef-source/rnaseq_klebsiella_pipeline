@@ -1,0 +1,5 @@
+name: rnaseq_pipe
+channels:
+dependencies:
+
+prefix: "/home/refm_youssef/mambaforge/envs/rnaseq_pipe"
