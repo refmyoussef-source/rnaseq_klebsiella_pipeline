@@ -1,1 +1,9 @@
 .ipynb_checkpoints/
+
+# Data, Index, and Results Directories
+00_Data_QC/
+01_Raw_Data/
+02_Trimmed_Data/
+03_Alignment/
+04_Counts/
+06_Genome_Index/
