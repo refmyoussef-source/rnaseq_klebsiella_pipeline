@@ -17,6 +17,9 @@ This clear separation between the two groups (Control vs. Treated) is confirmed 
 ### PCA Plot (Sample Similarity)
 ![PCA Plot of Samples](05_DGE_Results/PCA_plot_samples.png)
 
+### Volcano Plot (Differentially Expressed Genes)
+![Volcano Plot of Genes](05_DGE_Results/Volcano_plot_genes.png)
+
 ### Heatmap (Top 50 Genes)
 ![Heatmap of Top 50 Genes](05_DGE_Results/Heatmap_Top50_genes.png)
 
