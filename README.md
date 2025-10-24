@@ -1,10 +1,57 @@
-# RNA-Seq Pipeline: Klebsiella pneumoniae Virulence (PRJNA1281001)
+# 🚀 rnaSeq_klebsiella_pipeline
 
-## Project Goal
-Analysis of WT vs $\Delta cpxR$ mutant to identify CpxR-regulated virulence factors.
+A complete bioinformatics pipeline (FastQC, fastp, HISAT2, featureCounts, DESeq2) for RNA-Seq Differential Gene Expression (DGE) analysis of *Klebsiella pneumoniae*.
 
-## Data
-- **BioProject:** PRJNA1281001
-- **Organism:** Klebsiella pneumoniae HS11286 (Carbapenem-Resistant)
-- **Design:** 3 replicates (WT) vs 3 replicates ($\Delta cpxR$)
-- **Layout:** Paired-End, Stranded (dUTP method)
+This project analyzes data (GSE265435) to identify gene expression changes between Wild Type (WT) strains and mutant strains (ΔcpxR).
+
+---
+
+## 🔬 Key Results
+
+The analysis identified a massive transcriptional shift caused by the `cpxR` deletion.
+* **1,833 Genes Up-Regulated** (in mutant vs. WT)
+* **1,858 Genes Down-Regulated** (in mutant vs. WT)
+
+This clear separation between the two groups (Control vs. Treated) is confirmed by the PCA and Heatmap visualizations:
+
+### PCA Plot (Sample Similarity)
+![PCA Plot of Samples](05_DGE_Results/PCA_plot_samples.png)
+
+### Heatmap (Top 50 Genes)
+![Heatmap of Top 50 Genes](05_DGE_Results/Heatmap_Top50_genes.png)
+
+---
+
+## 📁 Project Structure
+
+The entire analysis is performed using a series of Jupyter Notebooks.
+
+* `00_Data_QC.ipynb`: Initial QC of raw FASTQ files (FastQC, MultiQC).
+* `01_Download_Data.ipynb`: Downloads reference genome (FASTA/GFF) and SRA data list.
+* `02_Trimming.ipynb`: Cleans raw reads (fastp, MultiQC).
+* `03_Alignment.ipynb`: Aligns reads to genome (HISAT2, samtools, MultiQC).
+* `04_Read_Counting.ipynb`: Generates the gene counts matrix (featureCounts).
+* `05_DGE_Analysis.ipynb`: Performs statistical analysis and visualization (R, DESeq2, pheatmap).
+
+---
+
+## ⚙️ How to Run
+
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/rnaSeq_klebsiella_pipeline.git
+    cd rnaSeq_klebsiella_pipeline
+    ```
+
+2.  **Create Environment:**
+    (This requires `mamba` to be installed)
+    ```bash
+    mamba env create -f environment.yml
+    mamba activate rnaseq_pipe
+    ```
+
+3.  **Run Notebooks:**
+    Launch Jupyter Lab and run the notebooks from `00` to `05` in numerical order.
+    ```bash
+    jupyter lab
+    ```
