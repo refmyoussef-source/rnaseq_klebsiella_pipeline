@@ -12,7 +12,7 @@ The analysis identified a massive transcriptional shift caused by the `cpxR` del
 * **1,833 Genes Up-Regulated** (in mutant vs. WT)
 * **1,858 Genes Down-Regulated** (in mutant vs. WT)
 
-This clear separation between the two groups (Control vs. Treated) is confirmed by the PCA and Heatmap visualizations:
+The PCA, Volcano, and Heatmap visualizations confirm this clear separation between the two groups (Control vs. Treated):
 
 ### PCA Plot (Sample Similarity)
 ![PCA Plot of Samples](05_DGE_Results/PCA_plot_samples.png)
@@ -34,7 +34,7 @@ The entire analysis is performed using a series of Jupyter Notebooks.
 * `02_Trimming.ipynb`: Cleans raw reads (fastp, MultiQC).
 * `03_Alignment.ipynb`: Aligns reads to genome (HISAT2, samtools, MultiQC).
 * `04_Read_Counting.ipynb`: Generates the gene counts matrix (featureCounts).
-* `05_DGE_Analysis.ipynb`: Performs statistical analysis and visualization (R, DESeq2, pheatmap).
+* `05_DGE_Analysis.ipynb`: Performs statistical analysis and visualization (R, DESeq2, pheatmap, ggplot2).
 
 ---
 
