@@ -60,6 +60,7 @@ dependencies:
   - harfbuzz=12.1.0=h15599e2_0
   - hisat2=2.2.1=h503566f_8
   - hpack=4.1.0=pyhd8ed1ab_0
+  - htslib=1.22.1=h566b1c6_0
   - httpcore=1.0.9=pyh29332c3_0
   - httpx=0.28.1=pyhd8ed1ab_0
   - humanfriendly=10.0=pyh707e725_8
@@ -242,6 +243,7 @@ dependencies:
   - rich=14.2.0=pyhcf101f3_0
   - rich-click=1.9.3=pyhd8ed1ab_0
   - rpds-py=0.28.0=py314h2e6c369_1
+  - samtools=1.22.1=h96c455f_0
   - send2trash=1.8.3=pyh0d859eb_1
   - setuptools=80.9.0=pyhff2d567_0
   - six=1.17.0=pyhe01879c_1
