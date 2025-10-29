@@ -42,7 +42,7 @@ The entire analysis is performed using a series of Jupyter Notebooks.
 
 1.  **Clone Repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/rnaSeq_klebsiella_pipeline.git
+    git clone https://github.com/refm_youssef/rnaSeq_klebsiella_pipeline.git
     cd rnaSeq_klebsiella_pipeline
     ```
 
