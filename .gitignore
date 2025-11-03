@@ -1,10 +1,11 @@
-.ipynb_checkpoints/
-
-# Data, Index, and Results Directories
-00_Data_QC/
+# --- Data Folders (The "Heavy Stuff") ---
 01_Raw_Data/
 02_Trimmed_Data/
-03_Alignment/
+03_Aligned_BAMs/
 04_Counts/
+05_DGE_Results/
 06_Genome_Index/
 07_HISAT2_Index/
+
+# --- System Files ---
+.ipynb_checkpoints/
