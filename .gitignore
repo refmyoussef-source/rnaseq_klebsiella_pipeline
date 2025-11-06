@@ -3,9 +3,12 @@
 02_Trimmed_Data/
 03_Aligned_BAMs/
 04_Counts/
-05_DGE_Results/
+05_DGE_Results/*
+!05_DGE_Results/*.png
+!05_DGE_Results/*.csv
 06_Genome_Index/
 07_HISAT2_Index/
 
 # --- System Files ---
 .ipynb_checkpoints/
+00_Data_QC/
