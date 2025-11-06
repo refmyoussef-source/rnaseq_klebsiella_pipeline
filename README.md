@@ -51,7 +51,7 @@ The entire analysis is performed using a series of Jupyter Notebooks.
 1.  **Clone Repository:**
     *(Note: I corrected the formatting here to put `cd` on a new line)*
     ```bash
-    git clone [https://github.com/refmyoussef-source/rnaseq_klebsiella_pipeline.git](https://github.com/refmyoussef-source/rnaseq_klebsiella_pipeline.git)
+    git clone https://github.com/refmyoussef-source/rnaseq_klebsiella_pipeline.git
     cd rnaseq_klebsiella_pipeline
     ```
 
